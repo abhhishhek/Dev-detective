@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=PT+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="title">DevDetective</h1>
+            <div id="btn-Node">
+                <p id="node-Text">DARK</p>
+                <div class="icon-container">
+                    <img id="node-Icon" src="./assets/images/moon-icon.svg" alt="" loading="lazy">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="app">
+                <div class="searchbar-Container Active">
+                    <input type="search" name="user-Input" id="input" placeholder="Enter a GitHub username..." required>
+                    <div class="error">
+                        <p id="no-Result">No search Result</p>
+                    </div>
+                    <button class="btn-Search" id="submit">search</button>
+                </div>
+                <div class="profile-Container">
+                    <div class="profile-Content">
+                        <div class="profile-header">
+                            <img id="avatar" src="#" alt="">
+                            <div class="profile-Into-Wrapper">
+                                <div class="profile-Name">
+                                    <h2 id="name"></h2>
+                                    <a href="#" target="-blank" rel="noopener noreferrer" id="user"></a>
+                                </div>
+                                <p id="date"></p>
+                            </div>
+                        </div>
+                        <p id="bio"></p>
+                        <div class="profile-Stats-Wrapper">
+                            <div class="profile-Stats">
+                                <p class="stat-Title">Repos</p>
+                                <p id="repos" class="stat-Value"></p>
+                            </div>
+                            <div class="profile-Stats">
+                                <p class="stat-Title">Followers</p>
+                                <p id="followers" class="stat-Value"></p>
+                            </div>
+                            <div class="profile-Stats">
+                                <p class="stat-Title">Following</p>
+                                <p id="following" class="stat-Value"></p>
+                            </div> 
+                        </div>
+                        <div class="profile-Bottom-Wrapper">
+                            <div class="profile-Info">
+                                <div class="bottom-Icons">
+                                    <img src="./assets/images/location-icon.svg" alt="" loading="lazy">
+                                </div>
+                                <p id="location"></p>
+                            </div>
+                            <div class="profile-Info">
+                                <div class="bottom-Icons">
+                                    <img src="./assets/images/website-icon.svg" alt="" loading="lazy">
+                                </div>
+                                <a href="#" id="page"></a>
+                            </div>
+                            <div class="profile-Info">
+                                <div class="bottom-Icons">
+                                    <img src="./assets/images/twitter-icon.svg" alt="" loading="lazy">
+                                </div>
+                                <a href="#" id="twitter"></a>
+                            </div>
+                            <div class="profile-Info">
+                                <div class="bottom-Icons">
+                                    <img src="./assets/images/company-icon.svg" alt="" loading="lazy">
+                                </div>
+                                <p id="company "></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
