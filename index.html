@@ -18,17 +18,18 @@
     <div class="wrapper">
         <header class="header">
             <h1 class="title">DevDetective</h1>
-            <div id="btn-Node">
-                <p id="node-Text">DARK</p>
+            <div id="btn-Mode">
+                <p id="mode-Text">DARK</p>
                 <div class="icon-container">
-                    <img id="node-Icon" src="./assets/images/moon-icon.svg" alt="" loading="lazy">
+                    <img id="mode-Icon" src="./assets/images/moon-icon.svg" alt="" loading="lazy">
                 </div>
             </div>
         </header>
 
         <main>
-            <div class="app">
+            <div id="app">
                 <div class="searchbar-Container Active">
+                    <img src="./assets/images/search-icon.svg" alt="">
                     <input type="search" name="user-Input" id="input" placeholder="Enter a GitHub username..." required>
                     <div class="error">
                         <p id="no-Result">No search Result</p>
@@ -39,10 +40,10 @@
                     <div class="profile-Content">
                         <div class="profile-header">
                             <img id="avatar" src="#" alt="">
-                            <div class="profile-Into-Wrapper">
+                            <div class="profile-Info-Wrapper">
                                 <div class="profile-Name">
                                     <h2 id="name"></h2>
-                                    <a href="#" target="-blank" rel="noopener noreferrer" id="user"></a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" id="user"></a>
                                 </div>
                                 <p id="date"></p>
                             </div>
@@ -93,5 +94,6 @@
             </div>
         </main>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
